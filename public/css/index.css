@@ -1,0 +1,159 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Normalización*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*variables*/
+:root {
+    /*Colores*/
+    --amarillo: #eac926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --negro: #000;
+    --blanco: #ffffff;
+
+    /*Tamaños de Fuentes */
+    --text-sm:1.2em;
+    --text-md:1.6em;
+    --text-lg:1.8em; 
+    --title-md:2.4em;
+
+    /*Familias de fuentes*/
+    --roboto: 'Roboto', sans-serif;
+
+
+
+}
+
+/*Estilos comunes*/
+
+
+
+html {
+    font-size: 62.5%;
+    font-family: var(--roboto);
+}
+
+body {
+    background-color: var(--gris-claro);
+}
+
+h3 {
+    font-size: var(--title-md);
+}
+
+p {
+    font-size: var(--text-sm);
+}
+
+
+
+/* Header */
+header {
+    background-color: var(--amarillo);
+}
+
+div.top-header {
+    padding: 5%;
+}
+
+header picture.logo{
+    display: block;
+    width: 50%;
+}
+
+header nav {
+    font-size: var(--text-sm);
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+header .form .input {
+    background-color: var(--blanco);
+    border: 1px solid var(--negro);
+    color:var(--gris-oscuro);
+    padding: 2px;
+
+}
+
+header .form .submit {
+    background-color: var(--blanco);
+    border: 1px solid var(--negro);
+    width: 18px;
+    padding: 2px;
+}
+
+header div.top-header p {
+    text-align: center;
+}
+
+div.burger-menu {
+    text-align: center ;
+}
+
+div.burger-menu i {
+    background-color:#0044AA ;
+    font-size: 20px;
+    color: var(--blanco);
+    height: 40px;
+    width: 40px;
+    margin: 10px 0 20px 0 ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*Banner*/
+
+section.banner img {
+    width: 100%;
+}
+/* Main */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+main section article img{
+    width: 100%;
+    
+}
+
+
+/*Footer*/
+
+footer article {
+    padding: 20px;
+    text-align: center;
+    color: var(--gris-oscuro);
+}
+
+footer p.copyrigth {
+    padding: 20px;
+    text-align: left;
+    color: var(--gris-oscuro);
+}
+
+footer article i {
+    color: #0044AA;
+    font-size: 30px;
+    padding: 12px;
+}
+
