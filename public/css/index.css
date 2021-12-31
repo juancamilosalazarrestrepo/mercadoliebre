@@ -71,6 +71,7 @@ header picture.logo{
 }
 
 header nav {
+    display: none;
     font-size: var(--text-sm);
 }
 
@@ -133,7 +134,8 @@ main {
 
 main section article {
     background-color: var(--blanco);
-    padding: 10px 0px;
+    margin: 10px 0px;
+    
 }
 
 main section article img{
@@ -143,6 +145,9 @@ main section article img{
 
 h2, .description{
     color: var(--gris-oscuro);
+}
+.description{
+    display: none;
 }
 
 .price{
@@ -187,5 +192,29 @@ footer article i {
     color: #0044AA;
     font-size: 30px;
     padding: 12px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 361px){
+    .description{
+        display: block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    
 }
 
