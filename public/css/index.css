@@ -54,6 +54,11 @@ p {
     font-size: var(--text-sm);
 }
 
+.flex-row{
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
 
 
 /* Header */
@@ -63,11 +68,19 @@ header {
 
 div.top-header {
     padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header picture.logo{
     display: block;
     width: 50%;
+}
+
+.form {
+    width: 50%;
+    display: flex;
 }
 
 header nav {
@@ -143,6 +156,8 @@ main section article img{
     
 }
 
+
+
 h2, .description{
     color: var(--gris-oscuro);
 }
@@ -152,16 +167,28 @@ h2, .description{
 
 .price{
     font-size:var(--text-lg) ;
+    /* width: 30%; */
 }
+/* .discount{
+    width: 70%;
+} */
 main section article i, .discount, .description{
     color:var(--verde);
 }
 
 main section article i {
     font-size: var(--text-md);
-    border: 2px solid var(--verde);
+    border: 1px solid var(--verde);
     border-radius: 50%;
-    padding: 8px;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--blanco);
+    position:absolute;
+    right: 20px;
+    top: -15px;
+
     
 } 
 
@@ -173,6 +200,7 @@ article div.product-card{
     width: 100%;
     border: 1px solid var(--gris-claro);
     padding: 15px;
+    position: relative;
 }
 /*Footer*/
 
@@ -197,8 +225,26 @@ footer article i {
 /*RESPONSIVE*/
 
 @media screen and (min-width: 361px){
+    
     .description{
         display: block;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        margin: 20px;
+    }
+    .products-container{
+        display: flex;
+        gap:10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .products-container article{
+        max-width: 45%;
     }
 
     main section article {
@@ -210,11 +256,14 @@ footer article i {
     }
 
     header nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 @media screen and (min-width: 769px) {
-    
+    .products-container article{
+        max-width: 22%;
+    }
 }
 
