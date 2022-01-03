@@ -446,5 +446,15 @@ form.formulario input[type=reset]:hover{
         max-width: 40rem;
 
     }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 30px;
+
+    }
+    footer article{
+        width: 33%;
+    }
 }
 
