@@ -278,7 +278,7 @@ form.formulario {
     justify-content: center;
     
     background-color: var(--blanco);
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 30px;
     border-radius: 5px;
     
@@ -450,7 +450,9 @@ form.formulario input[type=reset]:hover{
     footer{
         display: flex;
         flex-wrap: wrap;
-        margin: 0px 30px;
+        padding: 0px 30px;
+        background-color: var(--blanco);
+        margin: 50px 0px 0px 0px;
 
     }
     footer article{
