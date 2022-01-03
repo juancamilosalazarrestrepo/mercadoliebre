@@ -83,6 +83,7 @@ header picture.logo{
 .form {
     width: 50%;
     display: flex;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
 header nav {
@@ -101,21 +102,24 @@ header ul li a {
 
 header .form .input {
     background-color: var(--blanco);
-    border: 1px solid var(--negro);
+    border: 1px solid var(--gris-claro);
     color:var(--gris-oscuro);
     padding: 2px;
     height: 48px;
     width: 90%;
+    border-radius: 3px 0px 0px 3px;
     
 
 }
 
 header .form .submit {
     background-color: var(--blanco);
-    border: 1px solid var(--negro);
+    border: 1px solid var(--gris-claro);
     width:10%;
     padding:0px;
     height:48px;
+    
+    border-radius: 0px 3px 3px 0px;
 }
 
 header div.top-header p {
@@ -158,7 +162,14 @@ main {
 main section article {
     background-color: var(--blanco);
     margin: 10px 0px;
+    border-radius: 4px;
+    transition: all 0.5s ease-out;
     
+    
+}
+
+main section article:hover {
+    box-shadow: 0 7px 16px 0 rgba(0,0,0,0.2);
 }
 
 main section article img{
@@ -172,7 +183,14 @@ h2, .description{
     color: var(--gris-oscuro);
 }
 .description{
-    display: none;
+ opacity: 0;
+ margin: 0;
+ transition: opacity 0.5s linear;
+}
+main section article:hover div.product-card h3.description{
+   opacity: 1;
+   margin-top: 10px;
+  
 }
 
 .price{
@@ -182,9 +200,11 @@ h2, .description{
 /* .discount{
     width: 70%;
 } */
-main section article i, .discount, .description{
+main section article i, .discount{
     color:var(--verde);
 }
+
+
 
 main section article i {
     font-size: var(--text-md);
@@ -198,9 +218,25 @@ main section article i {
     position:absolute;
     right: 20px;
     top: -15px;
+    transition: all 0.5s ease-out;
 
     
 } 
+
+main section article:hover i{
+  
+    transform: rotate(-90deg);
+    
+}
+
+/* main section article div.product-card h3{
+    display: none;
+}
+
+main section article:hover div.product-card h3{
+    display: block;
+} */
+
 
 main section h3{
     margin: 20px 0px;
@@ -306,7 +342,7 @@ form.formulario input[type=file]{
     margin: 30px 0px 0px 0px;
     border: none;
 }
-form.formulario input[type=submit],form input[type=reset]{
+form.formulario input[type=submit]{
     height: 48px;
     font-size: 16px;
     font-weight: 600;
@@ -318,14 +354,37 @@ form.formulario input[type=submit],form input[type=reset]{
     border-radius: 6px;
     margin: 10px 0px;
 }
+form.formulario input[type=submit]:hover{
+    background-color: #0022AA;
+}
+form.formulario input[type=reset]{
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 48px;
+    background-color: #e71c6a;
+    color: var(--blanco);
+    border: none;
+    padding:0px 24px;
+    border-radius: 6px;
+    margin: 10px 0px;
+}
+
+form.formulario input[type=reset]:hover{
+    background-color: #ca0808;
+}
 
 /*RESPONSIVE*/
 
 @media screen and (min-width: 361px){
     
-    .description{
-        display: block;
+    .top-header{
+        flex-wrap: wrap;
     }
+    .description{
+        opacity: 1;
+        margin-top: 10px;
+    } 
 
     nav ul {
         display: flex;
@@ -345,8 +404,8 @@ form.formulario input[type=submit],form input[type=reset]{
     }
 
     main section article {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+    } 
 
     .burger-menu{
         display: none;
@@ -355,6 +414,8 @@ form.formulario input[type=submit],form input[type=reset]{
     header nav {
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
     }
 
 
