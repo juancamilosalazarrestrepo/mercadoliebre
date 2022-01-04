@@ -353,6 +353,7 @@ form.formulario input[type=submit]{
     padding:0px 24px;
     border-radius: 6px;
     margin: 10px 0px;
+    transition: background-color 0.5s ease-in ;
 }
 form.formulario input[type=submit]:hover{
     background-color: #0022AA;
@@ -368,6 +369,7 @@ form.formulario input[type=reset]{
     padding:0px 24px;
     border-radius: 6px;
     margin: 10px 0px;
+    transition: background-color 0.5s ease-in ;
 }
 
 form.formulario input[type=reset]:hover{
