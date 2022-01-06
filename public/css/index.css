@@ -267,6 +267,10 @@ footer article i {
     font-size: 30px;
     padding: 12px;
 }
+footer article i:hover {
+    color: #13AB09;
+    
+}
 
 
 /*Estilos Registro*/
@@ -354,6 +358,7 @@ form.formulario input[type=submit]{
     border-radius: 6px;
     margin: 10px 0px;
     transition: background-color 0.5s ease-in ;
+    cursor: pointer;
 }
 form.formulario input[type=submit]:hover{
     background-color: #0022AA;
@@ -363,17 +368,18 @@ form.formulario input[type=reset]{
     font-size: 16px;
     font-weight: 600;
     line-height: 48px;
-    background-color: #e71c6a;
+    background-color: #AB116C;
     color: var(--blanco);
     border: none;
     padding:0px 24px;
     border-radius: 6px;
     margin: 10px 0px;
     transition: background-color 0.5s ease-in ;
+    cursor: pointer;
 }
 
 form.formulario input[type=reset]:hover{
-    background-color: #ca0808;
+    background-color: #C20A19;
 }
 
 /*RESPONSIVE*/
@@ -439,6 +445,30 @@ form.formulario input[type=reset]:hover{
 }
 
 @media screen and (min-width: 769px) {
+    header nav {
+        padding: 0px 60px;
+    }
+
+    header div.top-header{
+        justify-content: space-between;
+
+    }
+
+    header picture.logo{
+        display: block;
+        width: 15%;
+        margin: 0px;
+    }
+    header picture.form{
+        display: block;
+        width: 30%;
+    }
+
+    header picture.p{
+        display: block;
+        width: 30%;
+    }
+    
     .products-container article{
         max-width: 22%;
     }
@@ -459,6 +489,10 @@ form.formulario input[type=reset]:hover{
     }
     footer article{
         width: 33%;
+    }
+
+    footer article h2{
+        margin-bottom: 5px;
     }
 }
 
