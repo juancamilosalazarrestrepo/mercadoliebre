@@ -155,6 +155,8 @@ div.burger-menu i {
 section.banner img {
     width: 100%;
 }
+
+
 /* Main */
 
 main {
@@ -245,6 +247,10 @@ main section article:hover div.product-card h3{
 
 main section h3{
     margin: 20px 0px;
+}
+
+main section h2{
+    margin: 30px 0px;
 }
 
 article div.product-card{
@@ -546,6 +552,7 @@ form.formulario input[type=reset]:hover{
     }
 
     footer article h2{
+        font-size: 1.8em;
         margin-bottom: 5px;
     }
 }
