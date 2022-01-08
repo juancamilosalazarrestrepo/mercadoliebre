@@ -104,7 +104,7 @@ header .form .input {
     background-color: var(--blanco);
     border: 1px solid var(--gris-claro);
     color:var(--gris-oscuro);
-    padding: 2px;
+    padding: 20px;
     height: 48px;
     width: 90%;
     border-radius: 3px 0px 0px 3px;
@@ -123,7 +123,11 @@ header .form .submit {
 }
 
 header div.top-header p {
+    
     text-align: center;
+   
+    
+
 }
 
 header div.top-header form {
@@ -388,6 +392,27 @@ form.formulario input[type=reset]:hover{
     
     .top-header{
         flex-wrap: wrap;
+        padding: 0;
+    }
+
+    header picture.logo{
+        display: block;
+        width: 100px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
+    }
+    header div form{
+        display: block;
+        width: 20%;
+        
+        
+    }
+
+    header div p{
+        display: block;
+        
+       
     }
     .description{
         opacity: 1;
@@ -396,8 +421,9 @@ form.formulario input[type=reset]:hover{
 
     nav ul {
         display: flex;
-        gap: 20px;
+        gap:20px;
         margin: 20px;
+        justify-content: space-around;
     }
     .products-container{
         display: flex;
@@ -445,28 +471,47 @@ form.formulario input[type=reset]:hover{
 }
 
 @media screen and (min-width: 769px) {
+    header {
+        font-size: 1.2em;
+    }
     header nav {
+        
         padding: 0px 60px;
     }
 
     header div.top-header{
+        padding: 2% 2%;
         justify-content: space-between;
 
+    }
+
+    nav ul{
+        gap: 15px;
+        margin: 10px;
     }
 
     header picture.logo{
         display: block;
         width: 15%;
-        margin: 0px;
+        margin: 10px;
     }
-    header picture.form{
+    header div form{
+        
         display: block;
         width: 30%;
     }
 
-    header picture.p{
+    header div p{
         display: block;
         width: 30%;
+        
+    }
+
+
+    header ul li a {
+        text-decoration: none;
+        color: var(--negro);
+        
     }
     
     .products-container article{
@@ -477,6 +522,10 @@ form.formulario input[type=reset]:hover{
         
         max-width: 40rem;
 
+    }
+
+    article{
+        font-size: 1.2rem;
     }
 
     footer{
@@ -496,3 +545,15 @@ form.formulario input[type=reset]:hover{
     }
 }
 
+
+@media screen and (min-width: 1255px) {
+    header div.top-header{
+        padding: 2% 4%;
+    }
+
+
+    nav ul{
+        gap: 120px;
+    }
+
+}
