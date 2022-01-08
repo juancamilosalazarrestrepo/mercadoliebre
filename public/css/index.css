@@ -105,6 +105,7 @@ header .form .input {
     border: 1px solid var(--gris-claro);
     color:var(--gris-oscuro);
     padding: 20px;
+    
     height: 48px;
     width: 90%;
     border-radius: 3px 0px 0px 3px;
@@ -561,12 +562,17 @@ form.formulario input[type=reset]:hover{
 @media screen and (min-width: 1255px) {
     header div.top-header{
         padding: 2% 4%;
+        
     }
    
 
-
+   
     nav ul{
         gap: 120px;
+    }
+
+    nav ul li{
+        margin-bottom: 10px;
     }
 
 }
