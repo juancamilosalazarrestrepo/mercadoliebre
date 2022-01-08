@@ -223,6 +223,7 @@ main section article i {
     right: 20px;
     top: -15px;
     transition: all 0.5s ease-out;
+    
 
     
 } 
@@ -528,6 +529,10 @@ form.formulario input[type=reset]:hover{
         font-size: 1.2rem;
     }
 
+    main section article i {
+        font-size: 16px;
+    }
+
     footer{
         display: flex;
         flex-wrap: wrap;
@@ -550,6 +555,7 @@ form.formulario input[type=reset]:hover{
     header div.top-header{
         padding: 2% 4%;
     }
+   
 
 
     nav ul{
